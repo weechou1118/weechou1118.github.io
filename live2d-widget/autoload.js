@@ -33,8 +33,8 @@ if (screen.width >= 768) {
 	]).then(() => {
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",
-			apiPath: "https://dongdayo.top/live2d_api",
-			// cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
+			// apiPath: "http://122.152.204.232/live2d_api",
+			cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
 		});
 	});
 }
