@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>标签: 前端 - Wee&#039;s Blog</title><meta property="og:type" content="blog"><meta property="og:title" content="Wee&#039;s Blog"><meta property="og:url" content="http://weechou1118.github.io/"><meta property="og:site_name" content="Wee&#039;s Blog"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://weechou1118.github.io/img/og_image.png"><meta property="article:author" content="Wee Chou"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://weechou1118.github.io"},"headline":"Wee's Blog","image":["http://weechou1118.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Wee Chou"},"description":""}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.min.css"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Wee&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">前端</a></li></ul></nav></div></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/"><img class="thumbnail" src="/img/thumbnail/mountainpink.jpg" alt="闭包"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2022-12-10T02:29:34.000Z" title="2022-12-10T02:29:34.000Z">2022-12-10</time><span class="level-item"><a class="link-muted" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span> / </span><a class="link-muted" href="/categories/%E5%89%8D%E7%AB%AF/%E6%97%A5%E8%AE%B0/">日记</a></span><span class="level-item">13 分钟 读完 (大约 1955 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/">闭包</a></h1><div class="content"><h1 id="2022从9-16开始转移到这"><a href="#2022从9-16开始转移到这" class="headerlink" title="2022从9.16开始转移到这"></a>2022从9.16开始转移到这</h1><h2 id="9-16"><a href="#9-16" class="headerlink" title="9.16"></a>9.16</h2><p>无</p>
+<h2 id="10-12"><a href="#10-12" class="headerlink" title="10.12"></a>10.12</h2><blockquote>
+<p>一些git 的高级用法</p>
+</blockquote>
+<h3 id="git-reflog"><a href="#git-reflog" class="headerlink" title="git reflog"></a>git reflog</h3><p>介绍：用来查看你的所有操作记录。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">30ffd23df4 (HEAD -&gt; hotfix/v4.58.1, origin/hotfix/v4.58.1) HEAD@&#123;0&#125;: reset: moving to HEAD</span><br><span class="line">30ffd23df4 (HEAD -&gt; hotfix/v4.58.1, origin/hotfix/v4.58.1) HEAD@&#123;1&#125;: pull --tags origin hotfix/v4.58.1: Fast-forward</span><br><span class="line">7ffbb01b45 HEAD@&#123;2&#125;: pull --tags origin hotfix/v4.58.1: Fast-forward</span><br><span class="line">80e253f34e HEAD@&#123;3&#125;: pull --tags origin hotfix/v4.58.1: Fast-forward</span><br></pre></td></tr></table></figure>
+
+<p>使用场景：配合git reset —hard commitId，可以实现比较灵活的版本跳转</p>
+<h2 id="10-13"><a href="#10-13" class="headerlink" title="10.13"></a>10.13</h2><blockquote>
+<p>逛下掘金</p>
+</blockquote>
+<ul>
+<li>图片压缩好网站: <a href="https://tinypng.com/" title="https://tinypng.com/">https://tinypng.com/</a></li>
+</ul>
+<h2 id="10-14"><a href="#10-14" class="headerlink" title="10.14"></a>10.14</h2><blockquote>
+<p>最后一天班,得好好学一天</p>
+</blockquote>
+<h3 id="📍跟着教程了解一下SEO"><a href="#📍跟着教程了解一下SEO" class="headerlink" title="📍跟着教程了解一下SEO"></a><strong>📍跟着教程了解一下SEO</strong></h3><p>搜索引擎的实现原理是爬虫。爬虫能够有效跟踪页面之间的链接，以查找要添加到索引中的新内容。使用搜索引擎时，将从索引当中提取相关结果，并用算法给其进行排名。</p>
+<p>结果发现是广告，那就不做笔记了，随便看看吧🐶</p>
+<hr>
+<p>递归组件相关的知识，可以看一下，好像很神奇</p>
+<p><a href="https://blog.csdn.net/sinat_17775997/article/details/110918047" title="https://blog.csdn.net/sinat_17775997/article/details/110918047">https://blog.csdn.net/sinat_17775997/article/details/110918047</a></p>
+<p><img src="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/image_4mTazt6iyn.png" alt></p>
+<hr>
+<p>📖<strong>前后端分离→CSR，对应服务端渲染→SSR</strong></p>
+<p><img src="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/image_dYm_lhMOQ6.png" alt></p>
+<p>⚠️以后不要因为复杂度的原因跳过eslint扫描了，不然以后别人在这个分支下提交代码都会有复杂度的报错</p>
+<h2 id="10-18"><a href="#10-18" class="headerlink" title="10.18"></a>10.18</h2><blockquote>
+<p>摸鱼day, 改了一些bug, 虽然还是没啥活, 试着用平常心去对待吧</p>
+</blockquote>
+<h2 id="10-19"><a href="#10-19" class="headerlink" title="10.19"></a>10.19</h2><blockquote>
+<p>话不多说，有时间还是多看看书把。然后等滑板到了， 务必玩起来，说不定能够成为，比羽毛球更适合自己的运动。</p>
+</blockquote>
+<p>📍鉴权相关的代码，本质就是最后是return true还是false</p>
+<p><a href="https://juejin.cn/post/7129298214959710244" title="https://juejin.cn/post/7129298214959710244">https://juejin.cn/post/7129298214959710244</a> 这个也可以看，写得不错</p>
+<h2 id="10-21"><a href="#10-21" class="headerlink" title="10.21"></a>10.21</h2><blockquote>
+<p>学习</p>
+</blockquote>
+<ul>
+<li>⭐️制订长期学习计划<ol>
+<li>早晨起来了解实事/各种论坛</li>
+<li>逛一下掘金啥的，学习专业技能，看看别人写的优质代码</li>
+<li>中午休息一下打两把游戏，吃饭顺便看动漫/辩论赛/综艺下饭</li>
+<li>下午出门看书？或者运动</li>
+<li>看电影/动漫</li>
+<li>游戏</li>
+<li>睡前尽量看书吧</li>
+<li>冥想，思考今天经历的一切，感受体内气息的流动</li>
+<li>睡觉</li>
+</ol>
+</li>
+<li>什么是webhook？<ul>
+<li>类似api，都是两个应用程序之间同步和中继数据的方式</li>
+<li>和api的区别：在发出请求的方式上有所不同。例如，无论是否有数据更新响应，API 都会调用数据。而 webhook 仅在您连接的外部系统有数据更新时才通过 HTTP POST 接收调用。</li>
+</ul>
+</li>
+</ul>
+<h2 id="10-24"><a href="#10-24" class="headerlink" title="10.24"></a>10.24</h2><blockquote>
+<p>学习</p>
+</blockquote>
+<ul>
+<li>果某个key不固定，可以把key抽成一个变量，用[key]的方式作为key</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> CUSTOM_KEY = <span class="string">'CUSTOM_KEY_ONE'</span></span><br><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  [CUSTOM_KEY]() &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">11</span>)</span><br><span class="line">  &#125; </span><br><span class="line">&#125;</span><br><span class="line">obj.CUSTOM_KEY_ONE()</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>xbb水印做法：在getUserInfo执行时执行创建水印的方法，原理是创建一个canvas，渲染水印内容，转成base64后插入到div的backgounrd-image里面</li>
+</ul>
+<h2 id="10-26"><a href="#10-26" class="headerlink" title="10.26"></a>10.26</h2><ul>
+<li><p>业务代码尽量不要写到通用组件里面</p>
+</li>
+<li><p>【CSS】如果忘记了flex相关的属性，可以在此方便看到，还能够进行调试</p>
+<p><img src="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/image_vQ26D9rSRI.png" alt></p>
+</li>
+<li><p>bilibili弹幕不遮挡人像实现方式</p>
+<ul>
+<li>关键属性mask-image、mask-size（注意要加兼容前缀比如-webkit-）</li>
+<li>遮罩层的图像会实时计算（应该做了防抖，不然这个性能消耗也太大了）。像b站的话会生成一个svg+xml;base64格式的图片，然后结合上面提到的属性由浏览器解析成遮罩层实现遮挡效果</li>
+</ul>
+</li>
+<li><p>好用的时间库：Moment（有点重，dayjs更轻量）、Date-FNS</p>
+</li>
+<li><p>🟩前端测试工具有时间接触一下？</p>
+</li>
+</ul>
+<h2 id="10-27"><a href="#10-27" class="headerlink" title="10.27"></a>10.27</h2><blockquote>
+<p>学习一下如何配置完好的代码校验，上完线再看Q4的东西，周末没事可以来公司卷一下？</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>npm模块</th>
+<th>功能介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>husky</td>
+<td>git的钩子，在git的hook中执行一些命令</td>
+</tr>
+<tr>
+<td>lint-staged</td>
+<td>对git暂存的文件进行lint检查</td>
+</tr>
+<tr>
+<td>eslint</td>
+<td>js代码检测工具</td>
+</tr>
+<tr>
+<td>prettier</td>
+<td>代码格式化模块</td>
+</tr>
+<tr>
+<td>CodeMetrics（vscode插件）</td>
+<td>复杂度计算</td>
+</tr>
+</tbody></table>
+<p><strong>eslint+prettier</strong></p>
+<p>最终目的是为了统一编码习惯，方便在协同开发的过程当中降低他人代码难度从而提高开发效率</p>
+<p>prettier</p>
+<ul>
+<li>首先得装个prettier插件</li>
+<li>在package.json同级根目录新建一个<code>.prettierrc</code>文件，内容：<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"printWidth"</span>: <span class="number">100</span>,</span><br><span class="line">  <span class="attr">"tabWidth"</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="attr">"useTabs"</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">"semi"</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">"singleQuote"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"quoteProps"</span>: <span class="string">"as-needed"</span>,</span><br><span class="line">  <span class="attr">"jsxSingleQuote"</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">"trailingComma"</span>: <span class="string">"none"</span>,</span><br><span class="line">  <span class="attr">"bracketSpacing"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"bracketSameLine"</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">"arrowParens"</span>: <span class="string">"always"</span>,</span><br><span class="line">  <span class="attr">"endOfLine"</span>: <span class="string">"lf"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>但是不适用于vue中&lt;template&gt;中的内容，这个时候我们可以结合eslint加强对规范的管理</li>
+</ul>
+<p>eslint</p>
+<ul>
+<li>首先当然是安装eslint</li>
+<li>通过eslint init初始化<code>.eslintrc.js</code>（但通常不这么做，通过init生成的文件规则太复杂了，自己新建一个文件写上常用的规则就好）</li>
+<li>然后就可以进行校验啦。单个文件手动校验可以通过eslint [path]命令，但我们不可能每次修改完文件都去手动执行命令校验一次代码规范，所以我们可以结合husky和lint-staged</li>
+</ul>
+<p>husky</p>
+<p>在package.json中配置</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">"husky": &#123;</span><br><span class="line">  "hooks": &#123;</span><br><span class="line">    "pre-commit": "lint-staged"</span><br><span class="line">  &#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>可能是版本问题，husky v8似乎需要手动补充命令才可以正常运行</p>
+<p><a href="https://blog.csdn.net/qiphon3650/article/details/125674339" title="https://blog.csdn.net/qiphon3650/article/details/125674339">https://blog.csdn.net/qiphon3650/article/details/125674339</a></p>
+<p>lint-staged</p>
+<p>在package.json中配置</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">"lint-staged": &#123;</span><br><span class="line">  "src/**": [</span><br><span class="line">    "prettier --config .prettierrc --write",</span><br><span class="line">    "eslint --fix",</span><br><span class="line">    <span class="string">"git add"</span></span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>CodeMetrics</p>
+<p>直接在vscode插件商店中安装即可</p>
+<p>安装后它会实时计算方法体的复杂度，并用俏皮的语言告诉你复杂度高还是低</p>
+<p><img src="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/image_QiiUh5-Yf1.png" alt></p>
+<p><img src="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/image_Qut_xl8KK0.png" alt></p>
+<h2 id="10-28"><a href="#10-28" class="headerlink" title="10.28"></a>10.28</h2><ul>
+<li>黑白滤镜<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">filter</span>: <span class="selector-tag">grayscale</span>(100%);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="11-10"><a href="#11-10" class="headerlink" title="11.10"></a>11.10</h3><p>断点续传实现流程有时间可以看一下</p>
+<h3 id="11-16"><a href="#11-16" class="headerlink" title="11.16"></a>11.16</h3><ul>
+<li>图片拖拽难点（也不难，主要是找到解决办法花了好久，索引能力还需提高）总结（vueDraggable + el-upload）<ul>
+<li>因为el-upload中的图片列表被封装在el-upload组件内，所以被办法通过直接包裹图片列表的方式达成拖拽条件</li>
+<li>这里的实现方法是，先给el-upload设置show-file-list=”false”，再自己额外添加一层拖拽层，可以直接使用element的类样式。然后在自己创建的图片列表外包裹一个VueDraggable标签即可</li>
+</ul>
+</li>
+</ul>
+<h3 id="11-18"><a href="#11-18" class="headerlink" title="11.18"></a>11.18</h3><p>总线相关的知识可以补充一下</p>
+<p>本质就是在不同组件下引用同一个Vue实例，然后利用该实例的$on和$emit实现事件的监听和触发</p>
+<h3 id="11-21"><a href="#11-21" class="headerlink" title="11.21"></a>11.21</h3><p>具名插槽</p>
+<ul>
+<li>父容器：</li>
+</ul>
+<p><img src="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/image_AVkt8X393i.png" alt></p>
+<ul>
+<li>子组件</li>
+</ul>
+<p><img src="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/image_DBv976lK57.png" alt></p>
+<hr>
+<p>【小工具】词云</p>
+<p><img src="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/image_c_Sk5bsd11.png" alt></p>
+<h3 id="11-24-x20"><a href="#11-24-x20" class="headerlink" title="11.24&#x20;"></a>11.24&#x20;</h3><p>📍在加组件之前，先看一下组件之间层级关系，如果有耦合业务的组件尽可能将组件作为父子关系，否则数据传输会很麻烦（bus/vuex）</p>
+<h3 id="11-30"><a href="#11-30" class="headerlink" title="11.30"></a>11.30</h3><p>📍开发之前注意嵌套结构，不然后面容易出问题</p>
+<h3 id="12-8"><a href="#12-8" class="headerlink" title="12.8"></a>12.8</h3><ul>
+<li>哪怕是简单的切图也要尽可能做到百分百复刻，像素级还原，不要嫌麻烦</li>
+</ul>
+<h3 id="12-9"><a href="#12-9" class="headerlink" title="12.9"></a>12.9</h3><p>🫡依照自己的步调走，脚踏实地，别想着一步登天；多看看别人的代码，学习一些优雅的写法。</p>
+<p>🫡工作的时候好好工作，下班之后好好玩</p>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="is-rounded" src="/img/avatar.jpg" alt="Wee Chou"></figure><p class="title is-size-4 is-block line-height-inherit">Wee Chou</p><p class="is-size-6 is-block">KEEP GOING</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">23</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">29</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">30</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/weech0u" target="_blank" rel="noopener">关注我</a></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile is-mobile" href="http://rainlu.gitee.io/blog/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Lu</span></span><span class="level-right"><span class="level-item tag">rainlu.gitee.io</span></span></a></li><li><a class="level is-mobile is-mobile" href="https://xugaoyi.com/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Evan</span></span><span class="level-right"><span class="level-item tag">xugaoyi.com</span></span></a></li><li><a class="level is-mobile is-mobile" href="http://acgtofe.com/posts/2021/03/web-emoji-input" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">acgtofe</span></span><span class="level-right"><span class="level-item tag">acgtofe.com</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><a class="media-left" href="/2023/02/15/%E8%8A%82%E6%B5%81%E9%98%B2%E6%8A%96/"><p class="image is-64x64"><img class="thumbnail" src="/img/thumbnail/sunset.jpg" alt="节流防抖"></p></a><div class="media-content size-small"><p><time dateTime="2023-02-15T02:39:13.000Z">2023-02-15</time></p><p class="title is-6"><a class="link-muted" href="/2023/02/15/%E8%8A%82%E6%B5%81%E9%98%B2%E6%8A%96/">节流防抖</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">性能优化</a></p></div></article><article class="media"><a class="media-left" href="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/"><p class="image is-64x64"><img class="thumbnail" src="/img/thumbnail/mountainpink.jpg" alt="闭包"></p></a><div class="media-content size-small"><p><time dateTime="2022-12-10T02:29:34.000Z">2022-12-10</time></p><p class="title is-6"><a class="link-muted" href="/2022/12/10/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%97%A5%E8%AE%B0/">闭包</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a> / <a class="link-muted" href="/categories/%E5%89%8D%E7%AB%AF/%E6%97%A5%E8%AE%B0/">日记</a></p></div></article><article class="media"><a class="media-left" href="/2022/10/27/%E7%90%86%E8%A7%A3%E8%99%9A%E6%8B%9FDOM/"><p class="image is-64x64"><img class="thumbnail" src="/img/thumbnail/contractdraw.jpg" alt="理解虚拟DOM"></p></a><div class="media-content size-small"><p><time dateTime="2022-10-27T07:15:36.000Z">2022-10-27</time></p><p class="title is-6"><a class="link-muted" href="/2022/10/27/%E7%90%86%E8%A7%A3%E8%99%9A%E6%8B%9FDOM/">理解虚拟DOM</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/React/">React</a> / <a class="link-muted" href="/categories/React/%E8%99%9A%E6%8B%9Fdom/">虚拟dom</a></p></div></article><article class="media"><a class="media-left" href="/2022/08/06/%E5%89%8D%E7%AB%AF%E6%9D%82%E8%B0%88/"><p class="image is-64x64"><img class="thumbnail" src="/img/road.jpg" alt="前端杂谈"></p></a><div class="media-content size-small"><p><time dateTime="2022-08-06T08:52:32.000Z">2022-08-06</time></p><p class="title is-6"><a class="link-muted" href="/2022/08/06/%E5%89%8D%E7%AB%AF%E6%9D%82%E8%B0%88/">前端杂谈</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/front-end-issues/">front end issues</a></p></div></article><article class="media"><a class="media-left" href="/2020/12/29/%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"><p class="image is-64x64"><img class="thumbnail" src="/img/thumbnail/subway.jpg" alt="常见排序算法"></p></a><div class="media-content size-small"><p><time dateTime="2020-12-29T05:41:41.000Z">2020-12-29</time></p><p class="title is-6"><a class="link-muted" href="/2020/12/29/%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">常见排序算法</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></p></div></article></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Flask/"><span class="level-start"><span class="level-item">Flask</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/Flask/models/"><span class="level-start"><span class="level-item">models</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/Javascript/"><span class="level-start"><span class="level-item">Javascript</span></span><span class="level-end"><span class="level-item tag">9</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/Javascript/ES6/"><span class="level-start"><span class="level-item">ES6</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Javascript/async/"><span class="level-start"><span class="level-item">async</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Javascript/event/"><span class="level-start"><span class="level-item">event</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Javascript/new%E5%85%B3%E9%94%AE%E5%AD%97/"><span class="level-start"><span class="level-item">new关键字</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Javascript/%E4%BD%9C%E7%94%A8%E5%9F%9F/"><span class="level-start"><span class="level-item">作用域</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Javascript/%E5%8E%9F%E5%9E%8B/"><span class="level-start"><span class="level-item">原型</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Javascript/%E8%8A%82%E6%B5%81%E9%98%B2%E6%8A%96/"><span class="level-start"><span class="level-item">节流防抖</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Javascript/%E9%97%AD%E5%8C%85/"><span class="level-start"><span class="level-item">闭包</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/Mac-OS/"><span class="level-start"><span class="level-item">Mac OS</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/Mac-OS/%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90/"><span class="level-start"><span class="level-item">应用推荐</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/Nuxt/"><span class="level-start"><span class="level-item">Nuxt</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/Nuxt/start/"><span class="level-start"><span class="level-item">start</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/React/"><span class="level-start"><span class="level-item">React</span></span><span class="level-end"><span class="level-item tag">6</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/React/Create-React-App/"><span class="level-start"><span class="level-item">Create React App</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/React/Hook/"><span class="level-start"><span class="level-item">Hook</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/React/ToDoList/"><span class="level-start"><span class="level-item">ToDoList</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/React/redux-saga/"><span class="level-start"><span class="level-item">redux-saga</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/React/%E8%99%9A%E6%8B%9Fdom/"><span class="level-start"><span class="level-item">虚拟dom</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/React/%E8%A7%A3%E5%86%B3%E6%A0%B7%E5%BC%8F%E6%B1%A1%E6%9F%93/"><span class="level-start"><span class="level-item">解决样式污染</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/Vue/"><span class="level-start"><span class="level-item">Vue</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/Vue/Vue-cli2-x/"><span class="level-start"><span class="level-item">Vue-cli2.x</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/front-end-issues/"><span class="level-start"><span class="level-item">front end issues</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E5%89%8D%E7%AB%AF/"><span class="level-start"><span class="level-item">前端</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/%E5%89%8D%E7%AB%AF/%E6%97%A5%E8%AE%B0/"><span class="level-start"><span class="level-item">日记</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"><span class="level-start"><span class="level-item">性能优化</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E7%AE%97%E6%B3%95/"><span class="level-start"><span class="level-item">算法</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2023/02/"><span class="level-start"><span class="level-item">二月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2022/12/"><span class="level-start"><span class="level-item">十二月 2022</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2022/10/"><span class="level-start"><span class="level-item">十月 2022</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2022/08/"><span class="level-start"><span class="level-item">八月 2022</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/12/"><span class="level-start"><span class="level-item">十二月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/09/"><span class="level-start"><span class="level-item">九月 2020</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">八月 2020</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">五月 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/CSS-module/"><span class="tag">CSS module</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Diff/"><span class="tag">Diff</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ECMAScript-6/"><span class="tag">ECMAScript 6</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ES7/"><span class="tag">ES7</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Flask/"><span class="tag">Flask</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Hook/"><span class="tag">Hook</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Javascript/"><span class="tag">Javascript</span><span class="tag is-grey-lightest">10</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Node/"><span class="tag">Node</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Nuxt/"><span class="tag">Nuxt</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Promise/"><span class="tag">Promise</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/React/"><span class="tag">React</span><span class="tag is-grey-lightest">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Redux/"><span class="tag">Redux</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Vue/"><span class="tag">Vue</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Vue-cli2-x/"><span class="tag">Vue-cli2.x</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Webpack/"><span class="tag">Webpack</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/async/"><span class="tag">async</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/debounce/"><span class="tag">debounce</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/issues/"><span class="tag">issues</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/javascript/"><span class="tag">javascript</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/less/"><span class="tag">less</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/less-loader/"><span class="tag">less-loader</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/macos/"><span class="tag">macos</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/new/"><span class="tag">new</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/redux-saga/"><span class="tag">redux-saga</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/vdom/"><span class="tag">vdom</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%AB%AF/"><span class="tag">前端</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BC%82%E6%AD%A5/"><span class="tag">异步</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"><span class="tag">性能优化</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%97%A5%E8%AE%B0/"><span class="tag">日记</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%AE%97%E6%B3%95/"><span class="tag">算法</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Wee&#039;s Blog" height="28"></a><p class="size-small"><span>&copy; 2023 Wee Chou</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'http://weechou1118.github.io',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
